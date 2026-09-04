@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malik Eliya Hyder — Data Science • AI/ML • Software</title>
+  <meta name="description" content="Portfolio of Malik Eliya Hyder, a Data Science student at IIT Madras building AI-powered tools, Linux applications, software experiments, and data-driven projects." />
+  <meta name="author" content="Malik Eliya Hyder" />
+  <meta name="keywords" content="data science, AI, ML, machine learning, portfolio, IIT Madras, Python, Linux, developer" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Malik Eliya Hyder — Data Science • AI/ML • Software" />
+  <meta property="og:description" content="Portfolio of Malik Eliya Hyder, a Data Science student at IIT Madras building AI-powered tools, Linux applications, software experiments, and data-driven projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Malik Eliya Hyder — Data Science • AI/ML • Software" />
+  <meta name="twitter:description" content="Portfolio of Malik Eliya Hyder, a Data Science student at IIT Madras building AI-powered tools, Linux applications, software experiments, and data-driven projects." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cursor follower -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="Home">HYDER</a>
+      <nav class="nav__links" id="navLinks" role="navigation" aria-label="Main navigation">
+        <a href="#hero" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#work" class="nav__link">Work</a>
+        <a href="#hackathons" class="nav__link">Hackathons</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu__nav" role="navigation" aria-label="Mobile navigation">
+      <a href="#hero" class="mobile-menu__link">Home</a>
+      <a href="#about" class="mobile-menu__link">About</a>
+      <a href="#work" class="mobile-menu__link">Work</a>
+      <a href="#hackathons" class="mobile-menu__link">Hackathons</a>
+      <a href="#skills" class="mobile-menu__link">Skills</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <!-- Animated background grid -->
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+      </div>
+
+      <!-- Photo background on the right -->
+      <div class="hero__photo" aria-hidden="true">
+        <img src="profile.jpg" alt="Malik Eliya Hyder" width="480" height="640" />
+      </div>
+
+      <!-- Terminal overlay on photo -->
+      <div class="hero__terminal anim-reveal" data-delay="2" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__header">
+            <span class="terminal__dot terminal__dot--red"></span>
+            <span class="terminal__dot terminal__dot--yellow"></span>
+            <span class="terminal__dot terminal__dot--green"></span>
+            <span class="terminal__title">hyder@dev:~</span>
+          </div>
+          <div class="terminal__body">
+            <div class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd">whoami</span></div>
+            <div class="terminal__line terminal__line--value">Malik Eliya Hyder</div>
+            <div class="terminal__line terminal__line--gap"></div>
+            <div class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd">role</span></div>
+            <div class="terminal__line terminal__line--value">Data Science Student</div>
+            <div class="terminal__line terminal__line--value">AI/ML Developer</div>
+            <div class="terminal__line terminal__line--value">Linux Enthusiast</div>
+            <div class="terminal__line terminal__line--value">Content Creator</div>
+            <div class="terminal__line terminal__line--gap"></div>
+            <div class="terminal__line"><span class="terminal__prompt">$</span> <span class="terminal__cmd">mindset</span></div>
+            <div class="terminal__line terminal__line--value">Build</div>
+            <div class="terminal__line terminal__line--value">Learn</div>
+            <div class="terminal__line terminal__line--value">Experiment</div>
+            <div class="terminal__line terminal__line--value">Repeat</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote on the right -->
+      <div class="hero__quote anim-reveal" data-delay="3" aria-hidden="true">
+        <p>"Good<br />Ideas<br />Better<br />Code"</p>
+        <span class="hero__quote-dash">—</span>
+      </div>
+
+      <!-- Location bottom right -->
+      <div class="hero__location anim-reveal" data-delay="4">
+        <span>CHENNAI, INDIA</span>
+        <span class="hero__location-line"></span>
+      </div>
+
+      <!-- Left text content -->
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__status anim-reveal">
+            <span class="hero__status-dot"></span>
+            Currently learning · building · experimenting
+          </div>
+
+          <h1 class="hero__title anim-reveal" data-delay="1">
+            Building<br />Intelligent Systems &<br />Useful <span class="hero__accent">Software.</span>
+          </h1>
+
+          <p class="hero__subtitle anim-reveal" data-delay="2">
+            I'm <strong>Malik Eliya Hyder</strong> — a Data Science student at IIT Madras exploring AI, machine learning, Python, Linux, and software development. I enjoy turning ideas into practical tools and experimenting with how intelligent systems can interact with the real world.
+          </p>
+
+          <div class="hero__actions anim-reveal" data-delay="3">
+            <a href="#work" class="btn btn--primary magnetic">
+              View My Work
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--outline magnetic">Let's Connect</a>
+          </div>
+
+          <!-- Quick highlights -->
+          <div class="hero__highlights anim-reveal" data-delay="4">
+            <div class="hero__highlight">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c6 3 12 0 12 0v-5"/></svg>
+              <div>
+                <span class="hero__highlight-title">IIT Madras</span>
+                <span class="hero__highlight-sub">Data Science</span>
+              </div>
+            </div>
+            <div class="hero__highlight">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <div>
+                <span class="hero__highlight-title">Python</span>
+                <span class="hero__highlight-sub">SQL | Java</span>
+              </div>
+            </div>
+            <div class="hero__highlight">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a4 4 0 0 1 4 4c0 2-2 3-2 5h-4c0-2-2-3-2-5a4 4 0 0 1 4-4z"/><path d="M10 17h4M10 20h4"/></svg>
+              <div>
+                <span class="hero__highlight-title">AI / ML</span>
+                <span class="hero__highlight-sub">Pandas | PyTorch</span>
+              </div>
+            </div>
+            <div class="hero__highlight">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <div>
+                <span class="hero__highlight-title">Linux</span>
+                <span class="hero__highlight-sub">Build | Automate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social links bottom left -->
+        <div class="hero__socials anim-reveal" data-delay="5">
+          <a href="https://github.com/eliyahydermalik" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hero__social magnetic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="#" aria-label="YouTube" class="hero__social magnetic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg>
+            YouTube
+          </a>
+          <a href="https://www.linkedin.com/in/malik-eliya-hyder-0984992b8?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hero__social magnetic">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll to explore -->
+      <div class="hero__scroll anim-reveal" data-delay="5" aria-hidden="true">
+        <div class="hero__scroll-icon">
+          <div class="hero__scroll-dot"></div>
+        </div>
+        <span>SCROLL TO EXPLORE</span>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about" id="about" aria-label="About me">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__content">
+            <span class="section-label anim-reveal">About</span>
+            <h2 class="section-title anim-reveal" data-delay="1">A little about me.</h2>
+            <div class="about__text anim-reveal" data-delay="2">
+              <p>I'm a Data Science student at IIT Madras with a strong interest in AI/ML, software development, Linux, and building practical technology.</p>
+              <p>I enjoy working close to the system — from developing AI-powered command-line tools to creating native Linux applications and experimenting with security-related systems.</p>
+              <p class="about__highlight">I'm especially interested in the intersection of:</p>
+            </div>
+            <div class="about__intersection anim-reveal" data-delay="3">
+              <span>AI</span>
+              <span class="about__x">×</span>
+              <span>Data</span>
+              <span class="about__x">×</span>
+              <span>Software</span>
+              <span class="about__x">×</span>
+              <span>Linux</span>
+            </div>
+          </div>
+
+          <div class="about__stats anim-reveal" data-delay="2">
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c6 3 12 0 12 0v-5"/></svg>
+              </div>
+              <span class="stat-card__label">IIT Madras</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <span class="stat-card__label">Data Science</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <span class="stat-card__label">Python / SQL</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 2-2 3-2 5h-4c0-2-2-3-2-5a4 4 0 0 1 4-4z"/><path d="M10 17h4M10 20h4M11 11h2"/></svg>
+              </div>
+              <span class="stat-card__label">AI / ML</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <span class="stat-card__label">Linux</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              </div>
+              <span class="stat-card__label">Technical Content Creator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="projects" id="work" aria-label="Featured projects">
+      <div class="container">
+        <span class="section-label anim-reveal">Work</span>
+        <h2 class="section-title anim-reveal" data-delay="1">Featured Projects.</h2>
+        <p class="section-subtitle anim-reveal" data-delay="2">A selection of things I've built, broken, and rebuilt.</p>
+
+        <div class="projects__grid">
+          <!-- Project 01: Skelton AI -->
+          <article class="project-card anim-reveal" data-delay="1">
+            <div class="project-card__visual project-card__visual--skelton">
+              <div class="project-visual-terminal">
+                <div class="pvt__header">
+                  <span class="pvt__dot"></span><span class="pvt__dot"></span><span class="pvt__dot"></span>
+                </div>
+                <div class="pvt__body">
+                  <div class="pvt__line"><span class="pvt__prompt">$</span> skelton "list all python files"</div>
+                  <div class="pvt__line pvt__line--output">→ find . -name "*.py" -type f</div>
+                  <div class="pvt__line"><span class="pvt__prompt">$</span> skelton "check disk usage"</div>
+                  <div class="pvt__line pvt__line--output">→ df -h --total</div>
+                  <div class="pvt__line pvt__line--safe">✓ Command verified safe</div>
+                  <div class="pvt__line pvt__line--cursor"><span class="pvt__prompt">$</span> <span class="pvt__blink">▌</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__number">01</span>
+              <span class="project-card__category">AI / CLI / Linux</span>
+              <h3 class="project-card__title">Skelton AI</h3>
+              <p class="project-card__desc">An AI-powered terminal assistant that converts natural-language instructions into Linux commands and explains what those commands do.</p>
+              <div class="project-card__tech">
+                <span>Python</span>
+                <span>OpenAI</span>
+                <span>Gemini</span>
+                <span>Ollama</span>
+                <span>Safety Parser</span>
+              </div>
+              <a href="#" class="project-card__cta magnetic" aria-label="View Skelton AI on GitHub">
+                View on GitHub
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02: Momentum -->
+          <article class="project-card project-card--reverse anim-reveal" data-delay="1">
+            <div class="project-card__visual project-card__visual--momentum">
+              <div class="project-visual-timer">
+                <svg class="pvtimer" viewBox="0 0 200 200" aria-hidden="true">
+                  <circle class="pvtimer__track" cx="100" cy="100" r="80" />
+                  <circle class="pvtimer__progress" cx="100" cy="100" r="80" />
+                  <text class="pvtimer__time" x="100" y="92" text-anchor="middle" dominant-baseline="middle">25:00</text>
+                  <text class="pvtimer__label" x="100" y="118" text-anchor="middle" dominant-baseline="middle">Focus Session</text>
+                </svg>
+                <div class="pvtimer__subjects">
+                  <span class="pvtimer__subject pvtimer__subject--active">Mathematics</span>
+                  <span class="pvtimer__subject">Python</span>
+                  <span class="pvtimer__subject">ML Theory</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__number">02</span>
+              <span class="project-card__category">Linux / Productivity / Python</span>
+              <h3 class="project-card__title">Momentum</h3>
+              <p class="project-card__desc">A native Linux study timer designed around focused study sessions, subject tracking, goals, and analytics.</p>
+              <div class="project-card__tech">
+                <span>Python</span>
+                <span>SQLite</span>
+                <span>Linux</span>
+                <span>Pomodoro</span>
+                <span>.deb</span>
+              </div>
+              <a href="#" class="project-card__cta magnetic" aria-label="View Momentum on GitHub">
+                View on GitHub
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03: Keylogger Detection -->
+          <article class="project-card anim-reveal" data-delay="1">
+            <div class="project-card__visual project-card__visual--keylogger">
+              <div class="project-visual-monitor">
+                <div class="pvm__header">
+                  <span class="pvm__title">Process Monitor</span>
+                  <span class="pvm__status">● Scanning</span>
+                </div>
+                <div class="pvm__processes">
+                  <div class="pvm__process pvm__process--safe">
+                    <span class="pvm__pid">PID 1042</span>
+                    <span class="pvm__name">nginx</span>
+                    <span class="pvm__badge pvm__badge--safe">Safe</span>
+                  </div>
+                  <div class="pvm__process pvm__process--warn">
+                    <span class="pvm__pid">PID 3891</span>
+                    <span class="pvm__name">unknown_proc</span>
+                    <span class="pvm__badge pvm__badge--warn">Suspicious</span>
+                  </div>
+                  <div class="pvm__process pvm__process--safe">
+                    <span class="pvm__pid">PID 2103</span>
+                    <span class="pvm__name">python3</span>
+                    <span class="pvm__badge pvm__badge--safe">Safe</span>
+                  </div>
+                  <div class="pvm__process pvm__process--danger">
+                    <span class="pvm__pid">PID 4527</span>
+                    <span class="pvm__name">keylog_svc</span>
+                    <span class="pvm__badge pvm__badge--danger">Threat</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__number">03</span>
+              <span class="project-card__category">Cybersecurity / Python</span>
+              <h3 class="project-card__title">Keylogger Detection System</h3>
+              <p class="project-card__desc">A Python-based prototype for detecting suspicious activity through process monitoring and abnormal system behavior.</p>
+              <div class="project-card__tech">
+                <span>Python</span>
+                <span>Process Monitoring</span>
+                <span>Behavior Analysis</span>
+                <span>Security</span>
+              </div>
+              <a href="#" class="project-card__cta magnetic" aria-label="View Keylogger Detection project">
+                View Project
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04: Solar System -->
+          <article class="project-card project-card--reverse anim-reveal" data-delay="1">
+            <div class="project-card__visual project-card__visual--solar">
+              <div class="project-visual-solar">
+                <svg class="pvsolar" viewBox="0 0 300 300" aria-hidden="true">
+                  <!-- Orbits -->
+                  <circle class="pvsolar__orbit" cx="150" cy="150" r="40" />
+                  <circle class="pvsolar__orbit" cx="150" cy="150" r="70" />
+                  <circle class="pvsolar__orbit" cx="150" cy="150" r="100" />
+                  <circle class="pvsolar__orbit" cx="150" cy="150" r="130" />
+                  <!-- Sun -->
+                  <circle class="pvsolar__sun" cx="150" cy="150" r="14" />
+                  <!-- Planets -->
+                  <circle class="pvsolar__planet pvsolar__planet--1" cx="190" cy="150" r="5" />
+                  <circle class="pvsolar__planet pvsolar__planet--2" cx="150" cy="80" r="7" />
+                  <circle class="pvsolar__planet pvsolar__planet--3" cx="50" cy="150" r="8" />
+                  <circle class="pvsolar__planet pvsolar__planet--4" cx="150" cy="280" r="6" />
+                </svg>
+              </div>
+            </div>
+            <div class="project-card__info">
+              <span class="project-card__number">04</span>
+              <span class="project-card__category">Python / Simulation</span>
+              <h3 class="project-card__title">Solar System Simulation</h3>
+              <p class="project-card__desc">An interactive solar-system simulation exploring planetary motion and visual representation through code.</p>
+              <div class="project-card__tech">
+                <span>Python</span>
+                <span>Simulation</span>
+                <span>Physics</span>
+                <span>Visualization</span>
+              </div>
+              <a href="#" class="project-card__cta magnetic" aria-label="View Solar System Simulation project">
+                View Project
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Section transition marker -->
+        <div class="projects__transition anim-reveal" data-delay="1">
+          <span>MORE THAN PROJECTS</span>
+          <div class="projects__transition-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== HACKATHONS & CHALLENGES ==================== -->
+    <section class="hackathons" id="hackathons" aria-label="Hackathons and Challenges">
+      <div class="container">
+        <!-- Section Introduction -->
+        <div class="hackathons__header">
+          <span class="section-label anim-reveal">03 / HACKATHONS</span>
+          <h2 class="section-title anim-reveal" data-delay="1">Building under constraints.</h2>
+          <p class="section-subtitle anim-reveal" data-delay="2">
+            "Challenges are where ideas meet deadlines, unfamiliar tools, and real-world problems. I use hackathons to learn quickly, experiment with new technologies, and turn ideas into working systems."
+          </p>
+        </div>
+
+        <!-- Featured Case Study Card: LearnBridge AI -->
+        <div class="hackathon-case-study anim-reveal" data-delay="2">
+          <!-- Case Study Top Badge & Challenge Link -->
+          <div class="hcs__top">
+            <div class="hcs__badge">
+              <span class="hcs__badge-dot"></span>
+              Built for the ML Empowerment Build Challenge 2026
+            </div>
+            <div class="hcs__challenge-link">
+              <a href="https://ml-empowerment-build-challenge.devpost.com/" target="_blank" rel="noopener noreferrer" class="link-external">
+                ML Empowerment Build Challenge 2.0 →
+              </a>
+            </div>
+          </div>
+
+          <!-- Title & Subtitle -->
+          <div class="hcs__heading">
+            <h3 class="hcs__title">LearnBridge AI</h3>
+            <p class="hcs__subtitle">Adaptive AI Learning Platform</p>
+            <div class="hcs__tags">
+              <span class="hcs__tag">AI</span>
+              <span class="hcs__tag">Machine Learning</span>
+              <span class="hcs__tag">Education</span>
+              <span class="hcs__tag">React</span>
+              <span class="hcs__tag">Express</span>
+              <span class="hcs__tag">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Main Grid: Overview & Metadata -->
+          <div class="hcs__overview-grid">
+            <div class="hcs__description">
+              <p class="hcs__lead">
+                An adaptive learning platform that builds a dynamic model of what a student knows, diagnoses learning gaps, and continuously adapts the learning path.
+              </p>
+              <p class="hcs__body">
+                Unlike a conventional AI chatbot that simply answers questions, LearnBridge maintains a Student Knowledge Model and uses it to diagnose weaknesses, recommend what to learn next, generate targeted interventions, and reassess progress.
+              </p>
+            </div>
+
+            <div class="hcs__meta">
+              <div class="hcs__meta-item">
+                <span class="hcs__meta-label">CHALLENGE</span>
+                <span class="hcs__meta-val">ML Empowerment Build Challenge 2026</span>
+              </div>
+              <div class="hcs__meta-item">
+                <span class="hcs__meta-label">TYPE</span>
+                <span class="hcs__meta-val">AI / Machine Learning / Education</span>
+              </div>
+              <div class="hcs__meta-item">
+                <span class="hcs__meta-label">FOCUS</span>
+                <span class="hcs__meta-val">Personalized Learning</span>
+              </div>
+              <div class="hcs__meta-item">
+                <span class="hcs__meta-label">PLATFORM</span>
+                <span class="hcs__meta-val">Online</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem Statement & Certificate Card -->
+          <div class="hcs__problem-grid">
+            <div class="hcs__problem-box">
+              <span class="hcs__section-label">THE PROBLEM</span>
+              <p>
+                Most learning platforms tell students what they completed, but don't deeply understand <strong>WHY</strong> they are struggling. LearnBridge approaches learning as a continuously changing knowledge model.
+              </p>
+            </div>
+
+            <!-- Participation Certificate Embed Card -->
+            <div class="hcs__certificate-card">
+              <div class="hcs__cert-preview">
+                <img src="certificate-learnbridge.png" alt="LearnBridge AI Certificate of Participation — ML Empowerment Build Challenge 2.0" class="hcs__cert-img" loading="lazy" />
+              </div>
+              <div class="hcs__cert-info">
+                <span class="hcs__cert-title">Certificate of Participation</span>
+                <span class="hcs__cert-sub">ML Empowerment Build Challenge 2.0 • Sept 4, 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Major Capabilities Grid -->
+          <div class="hcs__capabilities">
+            <h4 class="hcs__subheading">CORE CAPABILITIES</h4>
+            <div class="hcs__cap-grid">
+              <div class="hcs__cap-card">
+                <span class="hcs__cap-num">01</span>
+                <h5 class="hcs__cap-title">Dynamic Knowledge Model</h5>
+                <p class="hcs__cap-desc">Tracks mastery, confidence, retention, and concept dependencies instead of relying on a simple progress bar.</p>
+              </div>
+              <div class="hcs__cap-card">
+                <span class="hcs__cap-num">02</span>
+                <h5 class="hcs__cap-title">AI Learning Diagnosis</h5>
+                <p class="hcs__cap-desc">Identifies patterns in mistakes and evaluates conceptual understanding, problem solving, application, and retention.</p>
+              </div>
+              <div class="hcs__cap-card">
+                <span class="hcs__cap-num">03</span>
+                <h5 class="hcs__cap-title">Adaptive Learning Agent</h5>
+                <p class="hcs__cap-desc">Assess → Recommend → Intervene → Reassess. The system dynamically creates targeted learning sessions based on identified weaknesses.</p>
+              </div>
+              <div class="hcs__cap-card">
+                <span class="hcs__cap-num">04</span>
+                <h5 class="hcs__cap-title">AI Mentorship</h5>
+                <p class="hcs__cap-desc">Includes an AI Coding Mentor, Teach Back Mode, and Socratic Tutor for interactive guided learning.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Knowledge Galaxy Visual -->
+          <div class="hcs__visual-section">
+            <div class="hcs__visual-header">
+              <div>
+                <h4 class="hcs__subheading">KNOWLEDGE GALAXY</h4>
+                <p class="hcs__visual-desc">An interactive map of a student's learning state — showing mastered, developing, attention-needed, and blocked concepts.</p>
+              </div>
+            </div>
+
+            <div class="knowledge-graph-visual">
+              <div class="kgv__legend">
+                <span class="kgv__legend-item"><span class="kgv__dot kgv__dot--mastered"></span> Mastered</span>
+                <span class="kgv__legend-item"><span class="kgv__dot kgv__dot--developing"></span> Developing</span>
+                <span class="kgv__legend-item"><span class="kgv__dot kgv__dot--attention"></span> Needs Attention</span>
+                <span class="kgv__legend-item"><span class="kgv__dot kgv__dot--blocked"></span> Blocked</span>
+              </div>
+              <div class="kgv__graph">
+                <svg viewBox="0 0 800 320" class="kgv__svg" aria-label="Knowledge Galaxy Graph">
+                  <!-- Connections -->
+                  <path class="kgv__edge kgv__edge--active" d="M 120 160 L 260 80" />
+                  <path class="kgv__edge kgv__edge--active" d="M 120 160 L 260 240" />
+                  <path class="kgv__edge kgv__edge--active" d="M 260 80 L 420 120" />
+                  <path class="kgv__edge kgv__edge--attention" d="M 260 240 L 420 120" />
+                  <path class="kgv__edge kgv__edge--blocked" d="M 420 120 L 580 80" />
+                  <path class="kgv__edge kgv__edge--blocked" d="M 420 120 L 580 240" />
+                  <path class="kgv__edge" d="M 580 80 L 700 160" />
+
+                  <!-- Nodes -->
+                  <g class="kgv__node kgv__node--mastered" transform="translate(120, 160)">
+                    <circle r="24" />
+                    <text y="38" text-anchor="middle">Python Basics</text>
+                    <text y="-32" text-anchor="middle" class="kgv__status-text">100% Mastered</text>
+                  </g>
+                  <g class="kgv__node kgv__node--mastered" transform="translate(260, 80)">
+                    <circle r="22" />
+                    <text y="36" text-anchor="middle">Data Structures</text>
+                    <text y="-30" text-anchor="middle" class="kgv__status-text">92% Mastered</text>
+                  </g>
+                  <g class="kgv__node kgv__node--developing" transform="translate(260, 240)">
+                    <circle r="22" />
+                    <text y="36" text-anchor="middle">OOP Principles</text>
+                    <text y="-30" text-anchor="middle" class="kgv__status-text">68% Developing</text>
+                  </g>
+                  <g class="kgv__node kgv__node--attention" transform="translate(420, 120)">
+                    <circle r="26" />
+                    <text y="40" text-anchor="middle">Recursion & Trees</text>
+                    <text y="-34" text-anchor="middle" class="kgv__status-text">Needs Practice</text>
+                  </g>
+                  <g class="kgv__node kgv__node--blocked" transform="translate(580, 80)">
+                    <circle r="20" />
+                    <text y="34" text-anchor="middle">ML Algorithms</text>
+                    <text y="-28" text-anchor="middle" class="kgv__status-text">Blocked (Prereq)</text>
+                  </g>
+                  <g class="kgv__node kgv__node--blocked" transform="translate(580, 240)">
+                    <circle r="20" />
+                    <text y="34" text-anchor="middle">Neural Networks</text>
+                    <text y="-28" text-anchor="middle" class="kgv__status-text">Locked</text>
+                  </g>
+                  <g class="kgv__node kgv__node--muted" transform="translate(700, 160)">
+                    <circle r="18" />
+                    <text y="32" text-anchor="middle">Applied RAG</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Architecture Visual ("How it works") -->
+          <div class="hcs__architecture">
+            <h4 class="hcs__subheading">SYSTEM ARCHITECTURE & WORKFLOW</h4>
+            <div class="hcs__pipeline">
+              <div class="hcs__pipe-step">
+                <span class="hcs__pipe-num">01</span>
+                <span class="hcs__pipe-name">USER PROFILE & GOAL</span>
+              </div>
+              <div class="hcs__pipe-arrow">→</div>
+              <div class="hcs__pipe-step">
+                <span class="hcs__pipe-num">02</span>
+                <span class="hcs__pipe-name">KNOWLEDGE MODEL</span>
+              </div>
+              <div class="hcs__pipe-arrow">→</div>
+              <div class="hcs__pipe-step">
+                <span class="hcs__pipe-num">03</span>
+                <span class="hcs__pipe-name">DIAGNOSTIC ENGINE</span>
+              </div>
+              <div class="hcs__pipe-arrow">→</div>
+              <div class="hcs__pipe-step">
+                <span class="hcs__pipe-num">04</span>
+                <span class="hcs__pipe-name">ADAPTIVE AGENT</span>
+              </div>
+              <div class="hcs__pipe-arrow">→</div>
+              <div class="hcs__pipe-step hcs__pipe-step--accent">
+                <span class="hcs__pipe-num">05</span>
+                <span class="hcs__pipe-name">REASSESSMENT & ROADMAP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Responsible AI Subsection -->
+          <div class="hcs__responsible">
+            <div class="hcs__resp-header">
+              <span class="hcs__section-label">RESPONSIBLE AI</span>
+              <p class="hcs__resp-desc">Deterministic engines handle scoring and prerequisite routing, while grounded AI handles personalized explanations and interventions.</p>
+            </div>
+            <div class="hcs__resp-grid">
+              <div class="hcs__resp-item">
+                <span class="hcs__resp-title">Deterministic Scoring</span>
+                <span class="hcs__resp-sub">Mathematical evaluation of progress and prerequisites</span>
+              </div>
+              <div class="hcs__resp-item">
+                <span class="hcs__resp-title">Anti-Hallucination Grounding</span>
+                <span class="hcs__resp-sub">RAG-anchored tutor responses against verified curriculum</span>
+              </div>
+              <div class="hcs__resp-item">
+                <span class="hcs__resp-title">Human Feedback</span>
+                <span class="hcs__resp-sub">Student confidence inputs & manual difficulty overrides</span>
+              </div>
+              <div class="hcs__resp-item">
+                <span class="hcs__resp-title">Data Privacy</span>
+                <span class="hcs__resp-sub">Local knowledge state tracking with zero data selling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech Stack Row & Links -->
+          <div class="hcs__footer">
+            <div class="hcs__tech-stack">
+              <span class="hcs__tech-label">TECH STACK</span>
+              <div class="hcs__tech-tags">
+                <span>React</span>
+                <span>Express</span>
+                <span>Tailwind CSS</span>
+                <span>AI / LLM</span>
+                <span>RAG</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+
+            <div class="hcs__actions">
+              <a href="https://github.com/eliyahydermalik/learnbridge-ai" target="_blank" rel="noopener noreferrer" class="btn btn--primary magnetic">
+                View on GitHub
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="skills" id="skills" aria-label="Skills">
+      <div class="container">
+        <span class="section-label anim-reveal">Capabilities</span>
+        <h2 class="section-title anim-reveal" data-delay="1">Skills & Tools.</h2>
+
+        <div class="skills__grid">
+          <div class="skills__group anim-reveal" data-delay="1">
+            <h3 class="skills__group-title">Programming</h3>
+            <div class="skills__tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">Bash</span>
+            </div>
+          </div>
+
+          <div class="skills__group anim-reveal" data-delay="2">
+            <h3 class="skills__group-title">AI / Machine Learning</h3>
+            <div class="skills__tags">
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">PyTorch</span>
+            </div>
+          </div>
+
+          <div class="skills__group anim-reveal" data-delay="3">
+            <h3 class="skills__group-title">Backend</h3>
+            <div class="skills__tags">
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">FastAPI</span>
+            </div>
+          </div>
+
+          <div class="skills__group anim-reveal" data-delay="4">
+            <h3 class="skills__group-title">Tools & Systems</h3>
+            <div class="skills__tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Vim</span>
+            </div>
+          </div>
+
+          <div class="skills__group skills__group--wide anim-reveal" data-delay="5">
+            <h3 class="skills__group-title">Additional</h3>
+            <div class="skills__tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Data Analysis</span>
+              <span class="skill-tag">Logical Thinking</span>
+              <span class="skill-tag">Analytical Reasoning</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">Basic Web Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTENT CREATOR ==================== -->
+    <section class="content" id="content" aria-label="Technical content">
+      <div class="container">
+        <div class="content__layout">
+          <div class="content__text">
+            <span class="section-label anim-reveal">Content</span>
+            <h2 class="section-title anim-reveal" data-delay="1">I also explain technology.</h2>
+            <p class="content__desc anim-reveal" data-delay="2">
+              I create educational content around coding and Data Science, breaking down technical concepts in a beginner-friendly way.
+            </p>
+            <a href="#" class="btn btn--primary content__cta magnetic anim-reveal" data-delay="3">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 4-8 4z"/></svg>
+              Watch on YouTube
+            </a>
+          </div>
+          <div class="content__visual anim-reveal" data-delay="2" aria-hidden="true">
+            <div class="content__play">
+              <div class="content__play-bg">
+                <div class="content__play-lines">
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="content__play-btn magnetic">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="content__play-ring"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GITHUB ==================== -->
+    <section class="github" id="github" aria-label="GitHub">
+      <div class="container">
+        <div class="github__inner anim-reveal">
+          <span class="section-label">Open Source</span>
+          <h2 class="github__title">More experiments live on GitHub.</h2>
+          <p class="github__desc">Most of my ideas start as experiments. Some become tools, some become learning projects, and some turn into something much bigger.</p>
+          <a href="https://github.com/eliyahydermalik" target="_blank" rel="noopener noreferrer" class="btn btn--primary magnetic">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            Explore GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="contact__inner">
+          <span class="section-label anim-reveal">Get in Touch</span>
+          <h2 class="contact__title anim-reveal" data-delay="1">Have an idea<br />worth building?</h2>
+          <p class="contact__desc anim-reveal" data-delay="2">
+            I'm always interested in interesting problems, new technologies, collaborations, and projects worth experimenting with.
+          </p>
+          <div class="contact__links anim-reveal" data-delay="3">
+            <a href="https://github.com/eliyahydermalik" target="_blank" rel="noopener noreferrer" class="contact__link magnetic">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/malik-eliya-hyder-0984992b8?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact__link magnetic">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=23f3004076@ds.study.iitm.ac.in" target="_blank" rel="noopener noreferrer" class="contact__link magnetic">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+              Gmail
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__copy">© 2026 Malik Eliya Hyder</span>
+        <span class="footer__location">Chennai, Tamil Nadu, India</span>
+        <span class="footer__tagline">Data Science Student · AI/ML Developer · Linux Builder</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
