@@ -93,13 +93,18 @@
     });
   });
 
-  // ── SMOOTH SCROLL ──
+  // ── SMOOTH SCROLL WITH HEADER OFFSET ──
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
       const target = document.querySelector(anchor.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+        const headerHeight = nav ? nav.offsetHeight : 72;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight + 5;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
       }
     });
   });
